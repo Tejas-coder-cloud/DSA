@@ -1,5 +1,6 @@
 #include<iostream>
 using namespace std;
+//code for finding the pair of elements in the array which matches the target element
 int main()
 {
     int arr[4]={3,4,5,6};

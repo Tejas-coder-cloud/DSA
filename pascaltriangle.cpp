@@ -2,7 +2,7 @@
 #include <vector>
 
 using namespace std;
-
+//code for making a pascal triangle
 vector<vector<int>> generate(int numRows) {
     vector<vector<int>> result;
 
