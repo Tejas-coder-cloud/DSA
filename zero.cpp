@@ -26,8 +26,10 @@ int main() {
     moveZeroes(nums);
 
     for (int num : nums)
-        cout << num << " ";
+    {
+     cout << num << " ";
     cout << endl;
+    }
 
     return 0;
 }
