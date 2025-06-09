@@ -10,7 +10,7 @@ int longestSubarrayWithSumK(const vector<int>& nums, int k) {
     int currentSum = 0;
 
     for (int i = 0; i < nums.size(); i++) {
-        currentSum += nums[i];
+        currentSum += nums[i]; 
 
         // Case 1: Subarray from beginning
         if (currentSum == k) {

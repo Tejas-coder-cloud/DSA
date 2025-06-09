@@ -14,7 +14,7 @@ int generate( const vector<int> &a )
 }
 int main()
 {
-    vector<int> a={1,1,2,2,3,4,4,5,5};
+    vector<int> a={1,1,2,2,4,4,5,5,3};
     cout<<"Element which occured only once is :"<<generate(a);
     return 0;
 }
