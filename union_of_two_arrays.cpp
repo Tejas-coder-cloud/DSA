@@ -54,3 +54,29 @@ int main() {
 
     return 0;
 }
+/* A simpler approach
+#include <iostream>
+#include <vector>
+#include <set>
+using namespace std;
+
+vector<int> unionSortedArrays(const vector<int>& nums1, const vector<int>& nums2) {
+    set<int> s(nums1.begin(), nums1.end()); // Insert all from nums1
+    s.insert(nums2.begin(), nums2.end());   // Insert all from nums2 (duplicates ignored)
+
+    return vector<int>(s.begin(), s.end()); // Convert set to vector
+}
+
+int main() {
+    vector<int> nums1 = {1, 2, 4, 5, 6};
+    vector<int> nums2 = {2, 3, 5, 7};
+
+    vector<int> result = unionSortedArrays(nums1, nums2);
+
+    cout << "Union of arrays: ";
+    for (int num : result)
+        cout << num << " ";
+    cout << endl;
+
+    return 0;
+}
