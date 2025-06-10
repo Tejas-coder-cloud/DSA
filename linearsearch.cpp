@@ -28,3 +28,23 @@ int main()
     return 0;
 
 }
+// simpler approach time complexity:O(n),space complexity:O(1)
+/*#include<iostream>
+using namespace std;
+
+int main() {
+    int arr[] = {1, 3, 3, 4, 4, 5};
+    int k = 7;
+    int n = sizeof(arr) / sizeof(arr[0]);
+
+    for(int i = 0; i < n; i++) {
+        if(arr[i] == k) {
+            cout << i;  // smallest index where k is found
+            return 0;
+        }
+    }
+
+    cout << -1;  // if not found
+    return 0;
+} 
+*/

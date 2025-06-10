@@ -46,3 +46,30 @@ int main() {
 
     return 0;
 }
+// A simpler approach for printing the pascal triangle
+//#include <iostream>
+//using namespace std;
+
+//int main() {
+//    int rows;
+//
+//    cout << "Enter the number of rows: ";
+//    cin >> rows;
+//
+//    for (int i = 0; i < rows; i++) {
+//        // Print leading spaces for alignment
+ //       for (int space = 0; space < rows - i - 1; space++)
+//            cout << "  ";
+//
+ //       int val = 1;
+//        for (int j = 0; j <= i; j++) {
+//            cout << val << "   ";
+  //          // Calculate the next value using formula: val = val * (i - j) / (j + 1)
+ //           val = val * (i - j) / (j + 1);
+//        }
+ //       cout << endl;
+//    }
+//
+// //   return 0;
+//}
+

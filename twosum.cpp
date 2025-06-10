@@ -9,7 +9,8 @@ int main()
     {
         for(int j=i+1;j<4;++j)
         {
-            if(arr[i]+arr[j]==target){
+            if(arr[i]+arr[j]==target)
+            {
                 cout<<"Valid pair"<<"("<<i<<","<<j<<")";
             }
         }
