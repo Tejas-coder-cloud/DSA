@@ -3,7 +3,8 @@
 #include <vector>
 using namespace std;
 
-int findMissingElement(const vector<int>& a) {
+int findMissingElement(const vector<int>& a) 
+{
     int n = a.size(); // since one element is missing, full range is from 0 to n
     int expected_sum = n * (n + 1) / 2;
     int actual_sum = 0;
@@ -16,7 +17,7 @@ int findMissingElement(const vector<int>& a) {
 }
 
 int main() {
-    vector<int> a = {0,1,2,3,4,5,7}; // 4 is missing
+    vector<int> a = {0,1,2,3,4,5,7}; // is missing
     cout << "Missing element of the array: " << findMissingElement(a) << endl;
     return 0;
 }

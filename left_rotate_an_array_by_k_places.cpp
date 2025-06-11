@@ -34,17 +34,19 @@ int main()
 
 using namespace std;
 
-void leftShiftInPlace(vector<int>& arr, int k) {
+void leftShiftInPlace(vector<int>& arr, int k)
+{
     int n = arr.size();
     k = k % n;
-    if (k == 0) return;
+    if (k == 0) return 0;
 
     reverse(arr.begin(), arr.begin() + k);
     reverse(arr.begin() + k, arr.end());
     reverse(arr.begin(), arr.end());
 }
 
-int main() {
+int main()
+{
     vector<int> arr = {1, 2, 3, 4, 5};
     int k = 2;
 
